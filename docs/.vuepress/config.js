@@ -6,7 +6,7 @@ module.exports = {
     theme: 'seeker',
     plugins: ['@vuepress/last-updated'],
     themeConfig: {
-        lastUpdated: 'ok',
+        lastUpdated: '最近更新',
         logo: '/seeker_logo_white.png',
         footer: {
             slogan: '世界你好',

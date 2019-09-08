@@ -15,7 +15,7 @@ tags: [VPS, Hexo, Git, Nginx]
 
 整个流程就是本地将 `*.md` 渲染成静态文件，然后Git推送到服务器的`repository`,服务器再通过 `git-hooks` 同步网站根目录。
 
-<!--more-->
+<!-- more -->
 
 ## 2. 整个搭建流程
 

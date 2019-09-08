@@ -17,8 +17,6 @@ Standalone entity that is meaningful on its own.
 
 **E** - Element，`元素`，`模块` 的一部分，没有独立的含义，并且在语义上与其 Block 相关联。
 
-<!-- more -->
-
 A part of a block that has no standalone meaning and is semantically tied to its block.
 
 例如：`menu item`, `list item`, `checkbox caption`, `header title`

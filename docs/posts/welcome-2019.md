@@ -9,8 +9,6 @@ tags: ['2019']
 
 Don't Settle!
 
-<!-- more -->
-
 2019 的 Flag
 
 1. 看12本书
