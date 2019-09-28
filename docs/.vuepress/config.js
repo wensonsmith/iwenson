@@ -1,15 +1,18 @@
 const path = require('path')
 
 module.exports = {
-    title: '网站名称',
-    description: '网站 Slogan',
+    title: '文森',
+    description: '一生为一次发光',
     theme: 'seeker',
+    markdown: {
+        lineNumbers: true,
+    },
     plugins: ['@vuepress/last-updated'],
     themeConfig: {
         lastUpdated: '最近更新',
-        logo: '/seeker_logo_white.png',
+        logo: '/ws-logo-white.png',
         footer: {
-            slogan: '世界你好',
+            // slogan: 'poetry',
             // copyright: 'no copyright',
             social: [
                 {
@@ -35,6 +38,10 @@ module.exports = {
             {
                 text: 'Github',
                 link: 'https://github.com/wensonsmith'
+            },
+            {
+                text: '关于',
+                link: '/about'
             },
         ],
     },
