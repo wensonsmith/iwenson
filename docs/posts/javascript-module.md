@@ -1,21 +1,19 @@
 ---
-title: Javascript 模块化
+title: Javascript 不同模块化方式的区别与联系
 permalink: javascript-module
 date: 2017-10-27 17:04
-category: 折腾
-tags: ['Js','模块化']
+category: 学习
+tags: [Javascript]
 ---
 
-# module.exports与 exports， export和 export default, import 及 require 的关系
-
-### 0x01 先说两种加载方式 CommonJS 和 AMD
+## 一、 先说两种加载方式 CommonJS 和 AMD
 
 1. `CommonJS` 用于服务端，即 `nodeJs` 加载模块的方式。每个文件就是一个模块，有自己的作用域。在一个文件里面定义的变量、函数、类，都是私有的，对其他文件不可见。模块之间通过 `require` 进行加载。
 2. AMD 加载方式用于浏览器环境中，因为浏览器从网络加载 JS 有延迟，无法像 nodeJs 服务器环境一样直接读文件。所以使用 `define('moduleName',['dependences'], function(){})` 这种方式定义模块。
 
 关于两种方式的介绍，可以看阮一峰的文章： [JS 模块化：AMD 规范](http://www.ruanyifeng.com/blog/2012/10/asynchronous_module_definition.html)
 
-### 0x02 基础知识
+## 二、基础知识
 
 一个基础的知识是：`module.exports`、`exports` 和 `require` 这三个是 CommonJS 模块规范。
 
@@ -31,9 +29,7 @@ tags: ['Js','模块化']
 
 导入模块：`require`、`import`
 
-
-
-### 0x03 module.exports 和 exports 的关系
+## 三、 module.exports 和 exports 的关系
 
 CommonJS规范规定，每个模块内部，`module`变量代表当前模块。这个变量是一个对象，它的`exports`属性（即`module.exports`）是对外的接口。加载某个模块，其实是加载该模块的`module.exports`属性。
 
@@ -67,7 +63,7 @@ let exports = module.exports
 
 
 
-### 0x04 export 和 export default 的关系
+## 四、 export 和 export default 的关系
 
 两者的区别主要在于 export 导出的是`一组`方法或者变量。 export default 只导出`一个`方法或变量。
 

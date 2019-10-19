@@ -1,41 +1,42 @@
 ---
 title: 数据库及迁移规范
+permalink: migrations-standards
 date: 2015-11-12 18:52:32
 category: 设计
-tags: [MySQL, 规范]
+tags: [MySQL,规范]
 ---
 
-## 1. Migrations 起名规则
+## 一、Migrations 起名规则
 
-即 `表名_动作_字段`, 动作包括 `create`, `add`, `delete` ,`alter`。 这样起名的好处是，比较好查找一个表的改动。
+即 `动作_表名`, 动作包括 `create`, `add`, `delete` ,`alter`。 这样起名的好处是，比较好查找一个表的改动。
 
 如果改变了多个字段， 仅需要写其中一个字段的名称即可。
 
 ```
-    [table_name]_[action]_[column]
+[action]_[table_name]
 ```
 
 示例：
 
 1. 增加一个`example_table` 表，因为他没有影响字段，则命名为：
 
-    ```
-        example_table_create
-    ```
-
-2. 在`example`表中添加一个字段 `user_name`, 命名为：
-
-    ```
-        example_table_add_user_name
+    ```sh
+    create_example_table
     ```
 
-3. 修改 `example_table` 表中的 `user_name` , 命名为：
+2. 在`example`表中添加一个字段 `user_name`,  或者删除 `example_table` 表命名为：
 
-    ```
-        example_table_alter_user_name
+    ```sh
+    alter_example_table
     ```
 
-## 2. Migrations 书写规范
+3. 删除 `example_table` , 命名为：
+
+    ```sh
+    delete_example_table
+    ```
+
+## 二、Migrations 书写规范
 
 1. 如果是 `create` 生成表的 `migration` , 需要在头部添加注释， 解释该表的作用
 
@@ -48,7 +49,7 @@ tags: [MySQL, 规范]
      * author: 小黑
      * time: 2015-11-11 18:09
     */
-    class m151002_121202_example_table_create extends CDbMigration
+    class m151002_121202_example_table_create extends Migration
     {
         ·····
     }
@@ -59,7 +60,6 @@ tags: [MySQL, 规范]
 
 
 - 所有字段的定义都需要加上注释
-- 非空原则：所有字段均不可为 NULL
 - 字符型的默认值为一个空字符值串 ' ' ；  
 - 数值型的默认值为数值0；逻辑型的默认值为数值0
 

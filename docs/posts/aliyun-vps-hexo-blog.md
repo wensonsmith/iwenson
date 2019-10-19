@@ -1,12 +1,12 @@
 ---
-title: 阿里云VPS搭建自己的的Hexo博客
-permalink: aliyun-vps-hexo-blog
+title: 阿里云 VPS 搭建自己的 Hexo 博客
+permalink: aliyun-vps-deploy-hexo-blog
 date: 2019-05-16 12:55:28
 category: 折腾
-tags: [VPS, Hexo, Git, Nginx]
+tags: [Hexo]
 ---
 
-## 1. 博客的架构
+## 一、博客的架构
 先搞明白Hexo博客从搭建到自动发布的架构，才能更好的理解我们每一步进行的操作。
 不然只跟着步骤过了一遍，却不知道为什么这么做。
 
@@ -15,9 +15,7 @@ tags: [VPS, Hexo, Git, Nginx]
 
 整个流程就是本地将 `*.md` 渲染成静态文件，然后Git推送到服务器的`repository`,服务器再通过 `git-hooks` 同步网站根目录。
 
-<!-- more -->
-
-## 2. 整个搭建流程
+## 二、整个搭建流程
 
 **第一部分**: 服务器环境搭建，包括安装 `Git` 、`Nginx`配置 、创建 `git` 用户 。
 
@@ -25,9 +23,9 @@ tags: [VPS, Hexo, Git, Nginx]
 
 **第三部分**: 使用Git自动化部署发布博客
 
-## 3. 服务器环境搭建
+## 三、 服务器环境搭建
 
-#### 3-1.安装Git和NodeJS (CentOS 环境)
+#### 3-1. 安装Git和NodeJS (CentOS 环境)
 
 ```sh
 yum install git
@@ -126,9 +124,9 @@ server
 }
 ```
 
-## 4. 本地Hexo程序
+## 四、 本地Hexo程序
 
-#### 4-1：初始化Hexo博客
+#### 4-1. 初始化Hexo博客
 
 首先要安装 `hexo-cli`，安装`hexo-cli` 需要 root 权限，使用 `sudo` 运行
 
@@ -164,9 +162,9 @@ hexo server
 ```
 现在便可以打开浏览器访问 `http://localhost:4000` 来查看我们的博客了！
 
-## 5. 自动化部署
+## 五、自动化部署
 
-#### 5-1：服务器上建立git裸库
+#### 5-1. 服务器上建立git裸库
 
 创建一个裸仓库，裸仓库就是只保存`git`信息的`Repository`, 首先切换到`git`用户确保`git`用户拥有仓库所有权
 一定要加 `--bare`，这样才是一个裸库。
@@ -217,7 +215,7 @@ hexo clean && hexo generate --deploy
 ```
 博客就更新咯！~
 
-Next：将会讲解如何更换我们的主题
+
 
 #### 参考资料：
 

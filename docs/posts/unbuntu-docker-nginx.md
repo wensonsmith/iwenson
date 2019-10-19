@@ -1,8 +1,9 @@
 ---
 title: Ubuntu docker 安装 nginx
+permalink: use-docker-run-nginx
 date: 2017-06-05 16:57
 category: 折腾
-tags: ['docker', 'nginx']
+tags: [Docker]
 ---
 
 1. 添加用户

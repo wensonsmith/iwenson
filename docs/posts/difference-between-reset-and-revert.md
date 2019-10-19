@@ -1,12 +1,12 @@
 ---
-title: Git reset和revert的区别
+title: Git reset 和 revert 的区别
 permalink: difference-between-reset-and-revert
 date: 2014-02-10 15:25:40
-category: 折腾
+category: 学习
 tags: [Git]
 ---
 
-## 两者的说明
+## 一、Reset 和 Revert 的作用
 - git reset 重置
 - git revert 撤销
 
@@ -31,7 +31,7 @@ tags: [Git]
 `commit-1,commit-3,commit-4`
 
 
-## Git reset 的参数 --soft  --mixed --hard
+## 二、Git reset 的参数 --soft  --mixed --hard
 
 先这么理解一下，比较好懂
 

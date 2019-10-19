@@ -1,12 +1,10 @@
 ---
-title: 接口开发规范
+title: RESTful 接口请求规范
 permalink: api-standard
 date: 2018-06-05 14:28
 category: 设计
 tags: [规范, RESTful, API]
 ---
-
-#  接口开发规范
 
 ## 一、HTTP状态码
 

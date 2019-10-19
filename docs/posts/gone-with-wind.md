@@ -1,9 +1,9 @@
 ---
-title: 等风来
+title: 等风来-矫情的碎碎念
 permalink: gone-with-wind
 date: 2014-03-16 16:36:58
 category: 自传
-tags: [思索, 三观]
+tags: [思索]
 ---
 
 一向文采翩翩的我好久不写东西，居然不知道从何说起

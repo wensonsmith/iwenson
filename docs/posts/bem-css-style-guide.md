@@ -1,12 +1,11 @@
 ---
-title: CSS BEM 编程规范
+title: 使用 BEM 编程规范编写 CSS
 date: 2018-06-05 15:39
 permalink: bem-css-style-guide
 category: 设计
 tags: [规范,CSS]
 ---
 
-# CSS 编程规范
 ## 一、 BEM含义
 
 **B** - Block， `模块`，有独立含义的实体 

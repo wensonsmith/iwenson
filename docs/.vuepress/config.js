@@ -7,7 +7,15 @@ module.exports = {
     markdown: {
         lineNumbers: true,
     },
-    plugins: ['@vuepress/last-updated'],
+    plugins: [
+        '@vuepress/last-updated',
+        [
+            '@vuepress/google-analytics',
+            {
+              'ga': 'UA-149929964-1' // UA-00000000-0
+            }
+        ]
+    ],
     themeConfig: {
         lastUpdated: '最近更新',
         logo: '/ws-logo-white.png',
