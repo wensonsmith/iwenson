@@ -1,7 +1,7 @@
 ---
 title: 阿里云 VPS 搭建自己的 Hexo 博客
 permalink: aliyun-vps-deploy-hexo-blog
-date: 2019-05-16 12:55:28
+date: 2016-06-15 12:55:28
 category: 折腾
 tags: [Hexo]
 ---
