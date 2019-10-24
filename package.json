@@ -15,6 +15,7 @@
     "vuepress": "^1.0.2"
   },
   "dependencies": {
-    "remove-markdown": "^0.3.0"
+    "remove-markdown": "^0.3.0",
+    "vuepress-theme-seeker": "^1.0.0"
   }
 }
