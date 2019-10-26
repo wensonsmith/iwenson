@@ -1,21 +1,22 @@
 {
-  "name": "seeker",
+  "name": "iwenson",
+  "repository": "https://github.com/wensonsmith/iwenson",
   "license": "MIT",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Blog of wensonsmith",
   "scripts": {
     "dev": "vuepress dev docs",
     "build": "vuepress build docs"
   },
   "devDependencies": {
-    "@vuepress/plugin-blog": "^1.2.4",
+    "@vuepress/plugin-blog": "^1.5.1",
     "@vuepress/plugin-google-analytics": "^1.2.0",
-    "@vuepress/plugin-last-updated": "^1.0.2",
-    "@vuepress/plugin-medium-zoom": "^1.0.2",
-    "vuepress": "^1.0.2"
+    "@vuepress/plugin-last-updated": "^1.2.0",
+    "@vuepress/plugin-medium-zoom": "^1.2.0",
+    "vuepress": "^1.2.0"
   },
   "dependencies": {
     "remove-markdown": "^0.3.0",
-    "vuepress-theme-seeker": "^1.0.0"
+    "vuepress-theme-seeker": "^1.0.2"
   }
 }
