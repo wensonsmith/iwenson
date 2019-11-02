@@ -18,7 +18,7 @@ module.exports = {
     ],
     themeConfig: {
         lastUpdated: '最近更新',
-        logo: '/ws-logo-white.png',
+        logo: '/logo-white.png',
         valine: {
             appId: 'zpYH60z3swFivRMCzdH85xHw-gzGzoHsz',
             appKey: 'eB05xKa2vXzULbAkaqR2W1EK',
