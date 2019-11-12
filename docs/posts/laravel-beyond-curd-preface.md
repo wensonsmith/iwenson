@@ -10,8 +10,8 @@ tags: [PHP,Laravel]
 
 - [00. 前言](https://iwenson.com/laravel-beyond-curd-preface)
 - [01. 领域 Domains](https://iwenson.com/laravel-beyond-crud-domains)
-- [02. Working with data](https://stitcher.io/blog/laravel-beyond-crud-02-working-with-data) 翻译中
-- [03. Actions](https://stitcher.io/blog/laravel-beyond-crud-03-actions) 翻译中
+- [02. 使用数据 Working with data](https://iwenson.com/laravel-beyond-curd-working-with-data/)
+- [03. 动作 Actions](https://iwenson.com/laravel-beyond-curd-actions/) 
 - [04. Models](https://stitcher.io/blog/laravel-beyond-crud-04-models) 翻译中
 - 05.Managing Domains: coming soon
 - 06.Models with the state pattern: coming soon
