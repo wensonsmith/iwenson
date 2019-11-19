@@ -69,44 +69,173 @@ http://api.example.restapi.org/blogs/mark-masse/entries/this-is-my-first-post
 
  
 
- ## 三、 资源的类型
+ ## 三、 响应内容约定
 
-### 1. 文档（Document）
+响应内容由 4 块组成：
 
-```markdown
-文档是资源的单一表现形式，可以理解为一个对象，或者数据库中的一条记录。在请求文档时，要么返回文档对应的数据，要么会返回一个指向另外一个资源(文档)的链接。以下是几个基于文档定义的URI例子：
-http://api.soccer.restapi.org/leagues/seattle 
-http://api.soccer.restapi.org/leagues/seattle/teams/trebuchet 
-http://api.soccer.restapi.org/leagues/seattle/teams/trebuchet/players/mike
+1. `code` , 可选， 如果是操作或内容没有错误，可以没有 code 字段或者 code 值为 0 
+2. `msg`，必须，不论是正常还是错误都需要进行返回。 没有错误的情况下固定为 `ok` （小写）。多个错误时返回数组
+3. `data`, 可选，返回数组或者对象数据，如果是操作类型请求可以无数据
+4. `meta`, 可选，返回分页相关数据
+
+1. 正常数据返回
+
+```js
+{
+  code: 0,
+  msg: 'ok',
+  data: [
+    { 
+      ...
+    }
+  ],
+  meta: {
+  	...    
+  }
+}
 ```
 
- ### 2. 集合（Collection）
+2. 错误数据返回
 
-```
-集合可以理解为是资源的一个容器(目录)，我们可以向里面添加资源(文档)。例如：
-http://api.soccer.restapi.org/leagues 
-http://api.soccer.restapi.org/leagues/seattle/teams
-http://api.soccer.restapi.org/leagues/seattle/teams/trebuchet/players
-```
-
-### 3. 仓库（Store）
-
-```
-仓库是客户端来管理的一个资源库，客户端可以向仓库中新增资源或者删除资源。客户端也可以批量获取到某个仓库下的所有资源。仓库中的资源对外的访问不会提供单独URI的，客户端在创建资源时候的URI除外。例如：
-PUT /users/1234/favorites/alonso
-上面的例子我们可以理解为，我们向一个id是1234的用户的仓库(收藏夹)中，添加了一个名为alonso的资源。通俗点儿说：就是用户收藏了一个自己喜爱的球员阿隆索。
-```
-
-### 4. 控制器（Controller）
-
-```
-控制器资源模型，可以执行一个方法，支持参数输入，结果返回。 是为了除了标准操作:增删改查(CRUD)以外的一些逻辑操作。控制器(方法)一般定义子URI中末尾，并且不会有子资源(控制器)。例如我们向用户重发ID为245743的消息：
-POST /alerts/245743/resend
+```js
+{
+  code: 10000,
+  msg: [
+    ...
+  ],
+}
+    
+{
+	code: 50000,
+  msg: 'server fatal error'
+}
 ```
 
- 
+3. 有时会遇到`HTTP STATUS`为 `200`, 需要用 `code`来指示错误的情况
 
-## 四、 命名规范
+##  四、接口调用
+
+1. ok， `HTTP_STATUS:200`
+   ```js
+   {
+     msg: ok
+	}
+   ```
+   
+   
+   
+2. withData, `HTTP_STATUS: 200`
+	
+  ```js
+  {
+    msg: ok,
+    data: ...
+    meta: ...
+  }
+  ```
+
+
+
+3. withError, `HTTP_STATUS: 200`
+
+   ```js
+   {
+     code: 10000,
+     msg: ...
+   }
+   ```
+
+   
+
+4. withCreated, `HTTP_STATUS: 201`
+
+   ```js
+   {
+     msg: ok,
+     data: ...
+   }
+   ```
+
+   
+
+5. withNoContent, `HTTP_STATUS:204` 
+
+   ```js
+   {
+     msg: ok
+   }
+   ```
+
+   
+
+6. withBadRequest，`HTTP_STATUS:400`
+
+   ```js
+   {
+     code: 40000
+     msg:'错误的请求'
+   }
+   ```
+
+   
+
+7. withUnauthorized，`HTTP_STATUS:401`
+
+   ```js
+   {
+     code: 40100,
+     msg: '您没有登录'
+   }
+   ```
+
+   
+
+8. withForbidden，`HTTP_STATUS:403`
+
+   ```js
+   {
+     code: 40300,
+     msg: '您没有权限'
+   }
+   ```
+
+   
+
+9. withNotFound,`HTTP_STATUS:404`
+
+   ```js
+   {
+     code: 40400,
+     msg: '没有找到'
+   }
+   ```
+
+   
+
+10. withTooManyRequests，`HTTP_STATUS:429`
+
+   ```js
+   {
+     code: 42900,
+     msg: '访问频率过快'
+   }
+   ```
+
+   
+
+11. withInternalServer，`HTTP_STATUS:500`
+
+    ```js
+    {
+      code: 50000,
+      msg: '服务器发生错误'
+    }
+    ```
+
+    
+
+
+## 五、 命名规范
 
 - 文档(Document)类型的资源用**名词(短语)单数**命名
 - 集合(Collection)类型的资源用**名词(短语)复数**命名
