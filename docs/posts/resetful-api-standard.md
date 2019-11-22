@@ -20,6 +20,7 @@ HTTP 定义了一系列可以用在接口返回的[有含义的状态码](https:
 - `403` `Forbidden` - 已经认证，但是没有权限进行操作
 - `404` `Not Found` - 所访问内容不存在
 - `405` `Method Not Allowd` - HTTP的方法不支持，例如某些只读资源，可能不支持POST/DELETE。但405的响应header中必须声明该URI所支持的方法
+- `422` `Unprocessable Entity` Laravel 里参数验证失败
 - `429` `Too Many Requests` - 请求太频繁被限制
 - `500` `500 Internal Server Error`  - 服务器内部错误
 
