@@ -1,6 +1,6 @@
 ---
 title: 2010-2020 我错过的黄金十年
-permalink: 2010-2020-lost-gold-decade
+permalink: 2010-2020-lost-golden-decade
 date: 2019-12-29 15:04
 category: 自传
 tags: [思索]
