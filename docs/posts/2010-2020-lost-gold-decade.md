@@ -50,6 +50,6 @@ tags: [思索]
 
 
 
-对于Sass，仍然要继续做，建了一个 TG Group 交流。
+对于Saas，仍然要继续做，建了一个 TG Group 交流。
 
-> Sass 交流：  https://t.me/sass_service
+> Saas 交流：  https://t.me/saas_service
