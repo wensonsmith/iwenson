@@ -2,7 +2,7 @@
   "name": "iwenson",
   "repository": "https://github.com/wensonsmith/iwenson",
   "license": "MIT",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Blog of wensonsmith",
   "scripts": {
     "dev": "vuepress dev docs",
@@ -12,12 +12,12 @@
     "@vuepress/plugin-blog": "^1.5.1",
     "@vuepress/plugin-google-analytics": "^1.2.0",
     "@vuepress/plugin-last-updated": "^1.2.0",
-    "@vuepress/plugin-medium-zoom": "^1.2.0",
-    "vuepress": "^1.2.0",
-    "vuepress-plugin-feed": "^0.1.8"
+    "@vuepress/plugin-medium-zoom": "^1.2.0"
   },
   "dependencies": {
+    "vuepress": "^1.2.0",
+    "vuepress-plugin-feed": "^0.1.8",
     "remove-markdown": "^0.3.0",
-    "vuepress-theme-seeker": "^1.0.2"
+    "vuepress-theme-seeker": "^1.0.3"
   }
 }
