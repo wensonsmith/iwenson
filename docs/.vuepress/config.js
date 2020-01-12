@@ -1,5 +1,28 @@
 const path = require('path')
 
+// set your global feed options - override in page frontmatter `feed`
+const feedOptions = {
+    feed_options: {
+        title: 'Wenson 的独立博客',
+        favicon: "https://iwenson.com/favicon.ico",
+        copyright: "Powered by Vuepress | Design by Wenson",
+        feedLinks: {
+            atom: "https://iwenson.com/feed.atom"
+          },
+          author: {
+            name: "Wenson Smith",
+            email: "wensonsmith@gmail.com",
+            link: "https://iwenson.com/about"
+          }
+    },
+    posts_directories: ['/posts/'],
+    canonical_base: 'https://iwenson.com/',
+    feeds: {
+        rss2: {enable: false},
+        json1: {enable: false}
+    }
+}
+
 module.exports = {
     title: 'Wenson',
     description: '一生为一次发光',
@@ -14,7 +37,8 @@ module.exports = {
             {
               'ga': 'UA-149929964-1' // UA-00000000-0
             }
-        ]
+        ],
+        [ 'feed', feedOptions]
     ],
     themeConfig: {
         lastUpdated: '最近更新',

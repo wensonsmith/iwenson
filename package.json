@@ -13,7 +13,8 @@
     "@vuepress/plugin-google-analytics": "^1.2.0",
     "@vuepress/plugin-last-updated": "^1.2.0",
     "@vuepress/plugin-medium-zoom": "^1.2.0",
-    "vuepress": "^1.2.0"
+    "vuepress": "^1.2.0",
+    "vuepress-plugin-feed": "^0.1.8"
   },
   "dependencies": {
     "remove-markdown": "^0.3.0",

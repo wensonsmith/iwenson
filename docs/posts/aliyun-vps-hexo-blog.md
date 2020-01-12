@@ -4,6 +4,7 @@ permalink: aliyun-vps-deploy-hexo-blog
 date: 2016-06-15 12:55:28
 category: 折腾
 tags: [Hexo]
+excerpt: 先搞明白Hexo博客从搭建到自动发布的架构，才能更好的理解我们每一步进行的操作。不然只跟着步骤过了一遍，却不知道为什么这么做。
 ---
 
 ## 一、博客的架构

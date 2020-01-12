@@ -30,33 +30,37 @@ adduser username
 
 4. Ubuntu 安装 Docker-CE
 
+5. https://docs.docker.com/install/linux/docker-ce/ubuntu/
+
    ```shell
    lsb_release -cs   //查看发版编号
    sudo apt-get -y install apt-transport-https ca-certificates curl
-
+   
    curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
      
    sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
-
+   
    # 如果提示为找到 add-apt-repository command 
    # sudo apt-get install software-properties-common
-
+   
    sudo apt-get update
    sudo apt-get -y install docker-ce
-
+   
    ```
 
-5. 安装 Docker-composer
+6. 安装 Docker-composer
+
+7. https://docs.docker.com/compose/install/
 
    ```shell
    curl -L https://github.com/docker/compose/releases/download/1.13.0/docker-compose-`uname -s`-`uname -m` > ./docker-compose
-
+   
    sudo mv ./docker-compose /usr/local/bin/docker-compose
    sudo chmod +x /usr/local/bin/docker-compose
-
+   
    ```
 
-6. 配置 nginx ,大致有这么几个配置文件
+8. 配置 nginx ,大致有这么几个配置文件
 
 
 ```shell
