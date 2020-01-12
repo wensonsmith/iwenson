@@ -52,8 +52,8 @@ module.exports = {
             copyright: 'Made with 💚 by Wenson',
             social: [
                 {
-                    type: 'qq', // qq, wechat, bilibili, github, rss, weibo
-                    value: '', 
+                    type: 'rss', // qq, wechat, bilibili, github, rss, weibo
+                    value: 'https://iwenson.com/feed.atom', 
                 },
                 {
                     type: 'wechat', // qq, wechat, bilibili, github, rss, weibo

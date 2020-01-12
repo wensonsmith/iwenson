@@ -6,7 +6,7 @@
   "description": "Blog of wensonsmith",
   "scripts": {
     "dev": "vuepress dev docs",
-    "build": "vuepress build docs"
+    "build": "vuepress build docs --no-cache"
   },
   "devDependencies": {
     "@vuepress/plugin-blog": "^1.5.1",
