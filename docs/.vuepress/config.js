@@ -1,5 +1,9 @@
 const path = require('path')
 
+const sortBy = (key) => {
+    return (a, b) => (a[key] > b[key]) ? -1 : ((b[key] > a[key]) ? 1 : 0);
+}
+
 // set your global feed options - override in page frontmatter `feed`
 const feedOptions = {
     feed_options: {
@@ -20,7 +24,8 @@ const feedOptions = {
     feeds: {
         rss2: {enable: false},
         json1: {enable: false}
-    }
+    },
+    sort: entries => entries.concat().sort(sortBy("date")),
 }
 
 module.exports = {
