@@ -1,7 +1,7 @@
 ---
 title: 2020 定投策略实验
 permalink: investment-strategy-2020
-date: 2020-01-30 20:38
+date: 2020-01-31 20:54:11
 category: 学习
 tags: [投资]
 ---
