@@ -1,7 +1,7 @@
 ---
 title: 代码整洁之道阅读思考
 permalink: clean-code
-date: 2019-02-02 12:56
+date: 2019-02-02 12:56:00
 category: 学习
 tags: [编程,规范]
 ---

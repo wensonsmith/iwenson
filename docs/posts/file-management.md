@@ -1,7 +1,7 @@
 ---
 title: 文件管理方法的设计与规范
 permalink: file-management
-date: 2015-11-20 19:38
+date: 2015-11-20 19:38:00
 category: 设计
 tags: [规范,文件]
 ---

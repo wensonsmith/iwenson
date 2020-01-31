@@ -1,7 +1,7 @@
 ---
 title: RESTful 接口请求规范
 permalink: api-standard
-date: 2018-06-05 14:28
+date: 2018-06-05 14:28:00
 category: 设计
 tags: [规范, RESTful, API]
 ---

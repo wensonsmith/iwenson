@@ -1,7 +1,7 @@
 ---
 title: Javascript 不同模块化方式的区别与联系
 permalink: javascript-module
-date: 2017-10-27 17:04
+date: 2017-10-27 17:04:00
 category: 学习
 tags: [Javascript]
 ---

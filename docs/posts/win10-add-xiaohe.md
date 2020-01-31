@@ -1,7 +1,7 @@
 ---
 title: Win10 使用注册表一键添加小鹤双拼方案
 permalink: win10-add-xiaohe
-date: 2019-12-21 10:32
+date: 2019-12-21 10:32:00
 category: 折腾
 tags: [技巧]
 ---

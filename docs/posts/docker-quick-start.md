@@ -1,7 +1,7 @@
 ---
 title: Docker 基础使用指南
 permalink: docker-quick-start
-date: 2017-03-31 22:34
+date: 2017-03-31 22:34:00
 category: 折腾
 tags: [Docker]
 ---

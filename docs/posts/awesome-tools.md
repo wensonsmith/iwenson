@@ -1,7 +1,7 @@
 ---
 title:  产品设计常用软件推荐
 permalink: awesome-tools
-date: 2018-05-23 18:14
+date: 2018-05-23 18:14:00
 category: 设计
 tags: [软件,产品]
 ---

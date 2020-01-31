@@ -1,7 +1,7 @@
 ---
 title: You've got to find what you love
 permalink: seek-better-me
-date: 2012-11-11 01:38
+date: 2012-11-11 01:38:00
 category: 自传
 tags: [思索]
 ---

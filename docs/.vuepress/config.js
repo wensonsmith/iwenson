@@ -30,6 +30,7 @@ module.exports = {
     markdown: {
         lineNumbers: true,
     },
+    evergreen: true,
     plugins: [
         '@vuepress/last-updated',
         [

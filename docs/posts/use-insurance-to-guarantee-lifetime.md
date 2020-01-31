@@ -1,7 +1,7 @@
 ---
 title: 使用保险来保障自己的生活
 permalink: use-insurance-to-guarantee-lifetime
-date: 2019-11-30 09:33
+date: 2019-11-30 09:33:00
 category: 自传
 tags: [生活,保险]
 ---

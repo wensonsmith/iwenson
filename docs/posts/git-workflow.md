@@ -1,7 +1,7 @@
 ---
 title: Git Flow 团队协作规范
 permalink: git-workflow
-date: 2018-08-06 9:00
+date: 2018-08-06 9:00:00
 category: 设计
 tags: [Git,规范]
 ---

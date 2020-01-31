@@ -1,6 +1,6 @@
 ---
 title: PHP 编程规范
-date:  2017-07-14 11:35
+date:  2017-07-14 11:35:00
 permalink: php-style-guide
 category: 设计 
 tags: [PHP,规范]

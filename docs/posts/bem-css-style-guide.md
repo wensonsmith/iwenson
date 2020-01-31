@@ -1,6 +1,6 @@
 ---
 title: 使用 BEM 编程规范编写 CSS
-date: 2018-06-05 15:39
+date: 2018-06-05 15:39:00
 permalink: bem-css-style-guide
 category: 设计
 tags: [规范,CSS]

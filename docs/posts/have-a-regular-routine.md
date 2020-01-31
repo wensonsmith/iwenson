@@ -1,7 +1,7 @@
 ---
 title: 作息规律计划
 permalink: have-a-regular-routine
-date: 2019-06-11 22:09
+date: 2019-06-11 22:09:00
 category: 自传
 tags: [自律,生活]
 ---
