@@ -9,10 +9,10 @@ tags: [PHP,Laravel]
 > 原文请查看：[https://stitcher.io/blog/laravel-beyond-crud](https://stitcher.io/blog/laravel-beyond-crud)
 
 - [00. 前言](https://iwenson.com/laravel-beyond-curd-preface)
-- [01. 领域 Domains](https://iwenson.com/laravel-beyond-crud-domains)
+- [01. 领域 Domains](https://iwenson.com/laravel-beyond-curd-domains)
 - [02. 使用数据 Working with data](https://iwenson.com/laravel-beyond-curd-working-with-data/)
 - [03. 动作 Actions](https://iwenson.com/laravel-beyond-curd-actions/) 
-- [04. Models](https://stitcher.io/blog/laravel-beyond-crud-04-models) 翻译中
+- [04. 模型 Models](https://iwenson.com/laravel-beyond-curd-models/)
 - 05.Managing Domains: coming soon
 - 06.Models with the state pattern: coming soon
 - 07.Enums: coming soon
