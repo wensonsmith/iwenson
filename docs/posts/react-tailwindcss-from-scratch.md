@@ -198,11 +198,11 @@ module: {
 
 > TIP: webpack requires an identifier (`ident`) in `options` when `{Function}/require` is used (Complex Options). The `ident` can be freely named as long as it is unique. It's recommended to name it (`ident: 'postcss'`)
 
-复制 `tailwincss`  官网示例html代码到 `index.html` ，`yarn build` 以后刷新页面查看效果， 如果显示正常说明已经成功的引入 `tailwindcss`。
+复制 `tailwindcss`  官网示例html代码到 `index.html` ，`yarn build` 以后刷新页面查看效果， 如果显示正常说明已经成功的引入 `tailwindcss`。
 
 ## 四、优化 CSS
 
-### 3.1将css独立成文件
+### 4.1将css独立成文件
 
 目前为止，所有的 css 还在 js 中，如果我们想把 css 独立出来，不再通过 `style-loader`  插入到 `header` 中，那么将会用到webpack 插件[mini-css-extract-plugin](https://github.com/webpack-contrib/mini-css-extract-plugin)
 
@@ -255,7 +255,7 @@ module.exports = {
 
 这样就会将css提取到 `dist/css/`文件夹下面。更多详细配置请参考官方文档。
 
-### 3.2 自动插入 HTML
+### 4.2 自动插入 HTML
 
 在上一步的过程中，我们生成的 css 文件名称你会发现后面多了一个随机的 `hash`值。 这个是为了避免缓存。每次生成的 `hash`值将会不一样，那么我们再引入html的时候就需要不断的修改。为了解决这个问题，引入插件 [html-webpack-plugin](https://github.com/jantimon/html-webpack-plugin)。这个插件可以把编译好的资源自动插入到html中。
 
@@ -278,7 +278,7 @@ plugins: [
 ...
 ```
 
-### 3.3 压缩 CSS 文件
+### 4.3 压缩 CSS 文件
 
 `Tailwindcss` 由于包含很多工具，所以 css 体积会比较大。打包以后 `main.css` 有 700+KB， 这里引入` PurgeCSS` 进行压缩
 
