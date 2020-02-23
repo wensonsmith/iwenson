@@ -30,7 +30,6 @@ index.js
 document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('content').innerText = 'Content from JS';
 })
-
 ```
 
 index.css
@@ -516,12 +515,12 @@ export default hot(module)(App);
 
 完结！ 撒花！
 
-示例代码在 : https://github.com/wensonsmith/react-with-tailwindcss-from-scratch
+示例代码在 : [Github/wensonsmith/React with Tailwindcss from scratch](https://github.com/wensonsmith/react-with-tailwindcss-from-scratch)
 
 ## 七、参考资料
 
-1. Create a react app from scratch：https://blog.usejournal.com/creating-a-react-app-from-scratch-f3c693b84658
-2. Webpack Document: https://www.webpackjs.com/concepts/
-3. About PostCSS: https://davidtheclark.com/its-time-for-everyone-to-learn-about-postcss/
-4. Tailwindcss: https://www.tailwindcss.cn/docs/installation/
+1. [Create a react app from scratch](https://blog.usejournal.com/creating-a-react-app-from-scratch-f3c693b84658)
+2. [Webpack Document](https://www.webpackjs.com/concepts/)
+3. [It's time for everyone to learn about PostCSS](https://davidtheclark.com/its-time-for-everyone-to-learn-about-postcss/)
+4. [Tailwindcss Document](https://www.tailwindcss.cn/docs/installation/)
 
