@@ -1,7 +1,7 @@
 ---
 title:  从零搭建 Webpack/React/Tailwindcss 项目
 permalink: react-with-tailwindcss-from-scratch
-date: 2020-02-22 09:50
+date: 2020-02-22 09:50:22
 category: 学习
 tags: [React,Webpack,Tailwindcss]
 ---
