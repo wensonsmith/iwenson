@@ -1,17 +1,21 @@
 ---
 layout: About
 friends:
+    - name: 曾小满的盒子
+      link: https://share-man.com/
+      desc: 善于思考乐于折腾
+      avatar: http://q2.qlogo.cn/headimg_dl?dst_uin=503941772&spec=100
     - name: 肆月之风
       link: https://acme.top
       desc: 爱技术、爱分享
       avatar: https://i.loli.net/2019/10/23/sYEJ1H8eLGiutQ2.png
     - name: 见字如面
       link: https://hiwannz.com/
-      desc: 别再烦我，你别说话
+      desc: 别再烦我你别说话
       avatar: https://img.seekbetter.me/logos/92.ico
     - name: Debug 客栈
       link: https://www.debuginn.cn
-      desc: 做一个爱分享的程序猿
+      desc: 一个爱分享的程序猿
       avatar: https://gravatar.loli.net/avatar/52826f236c12da591d63363f999ea538
     - name: 欢迎交换友链
       link: https://iwenson.com
