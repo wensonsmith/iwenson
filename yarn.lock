@@ -7455,10 +7455,10 @@ vuepress-plugin-smooth-scroll@^0.0.3:
   dependencies:
     smoothscroll-polyfill "^0.4.3"
 
-vuepress-theme-seeker@^1.0.8:
-  version "1.0.8"
-  resolved "https://registry.yarnpkg.com/vuepress-theme-seeker/-/vuepress-theme-seeker-1.0.8.tgz#d9ff92b6466f581470ebcf57daf711c854ffbe52"
-  integrity sha512-IzLK7ZW6Gly0fCTeCNGDbMGmwXS4rHGEytzhsPqzOiLW3AJQcHIQ6HQn/5IZMsk9s99yrpRmQHSgE/hYVZnS7w==
+vuepress-theme-seeker@^1.0.9:
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/vuepress-theme-seeker/-/vuepress-theme-seeker-1.0.9.tgz#952185d38ba9a385a58701a78d8c0aa4f4dc76e0"
+  integrity sha512-B2+99v7NKqMFkHuhC0KssGOckwz2vHH8UfU29JMZZ6U/Ov4PgbFMWg0JQlsTJLwlUfOMFoL3vN5GiAiPluYiKA==
   dependencies:
     "@vuepress/plugin-blog" "^1.2.4"
     "@vuepress/plugin-last-updated" "^1.0.2"
@@ -7726,9 +7726,9 @@ xtend@^4.0.0, xtend@~4.0.1:
   integrity sha512-LKYU1iAXJXUgAXn9URjiu+MWhyUXHsvfp7mcuYm9dSUKK0/CjtrUwFAxD82/mCWbtLsGjFIad0wIsod4zrTAEQ==
 
 y18n@^3.2.0:
-  version "3.2.1"
-  resolved "https://registry.yarnpkg.com/y18n/-/y18n-3.2.1.tgz#6d15fba884c08679c0d77e88e7759e811e07fa41"
-  integrity sha1-bRX7qITAhnnA136I53WegR4H+kE=
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/y18n/-/y18n-3.2.2.tgz#85c901bd6470ce71fc4bb723ad209b70f7f28696"
+  integrity sha512-uGZHXkHnhF0XeeAPgnKfPv1bgKAYyVvmNL1xlKsPYZPaIHxGti2hHqvOCQv71XMsLxu1QjergkqogUnms5D3YQ==
 
 "y18n@^3.2.1 || ^4.0.0", y18n@^4.0.0:
   version "4.0.0"
