@@ -5765,9 +5765,9 @@ postcss-value-parser@^4.0.2:
   integrity sha512-LmeoohTpp/K4UiyQCwuGWlONxXamGzCMtFxLq4W1nZVGIQLYvMCJx3yAF9qyyuFpflABI9yVdtJAqbihOsCsJQ==
 
 postcss@^7.0.0, postcss@^7.0.1, postcss@^7.0.14, postcss@^7.0.23, postcss@^7.0.5, postcss@^7.0.6:
-  version "7.0.26"
-  resolved "https://registry.yarnpkg.com/postcss/-/postcss-7.0.26.tgz#5ed615cfcab35ba9bbb82414a4fa88ea10429587"
-  integrity sha512-IY4oRjpXWYshuTDFxMVkJDtWIk2LhsTlu8bZnbEJA4+bYT16Lvpo8Qv6EvDumhYRgzjZl489pmsY3qVgJQ08nA==
+  version "7.0.36"
+  resolved "https://registry.yarnpkg.com/postcss/-/postcss-7.0.36.tgz#056f8cffa939662a8f5905950c07d5285644dfcb"
+  integrity sha512-BebJSIUMwJHRH0HAQoxN4u1CN86glsrwsW0q7T+/m44eXOUAxSNdHRkNZPYz5vVUbg17hFgOQDE7fZk7li3pZw==
   dependencies:
     chalk "^2.4.2"
     source-map "^0.6.1"
@@ -7455,10 +7455,10 @@ vuepress-plugin-smooth-scroll@^0.0.3:
   dependencies:
     smoothscroll-polyfill "^0.4.3"
 
-vuepress-theme-seeker@^1.0.8:
-  version "1.0.8"
-  resolved "https://registry.yarnpkg.com/vuepress-theme-seeker/-/vuepress-theme-seeker-1.0.8.tgz#d9ff92b6466f581470ebcf57daf711c854ffbe52"
-  integrity sha512-IzLK7ZW6Gly0fCTeCNGDbMGmwXS4rHGEytzhsPqzOiLW3AJQcHIQ6HQn/5IZMsk9s99yrpRmQHSgE/hYVZnS7w==
+vuepress-theme-seeker@^1.0.9:
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/vuepress-theme-seeker/-/vuepress-theme-seeker-1.0.9.tgz#952185d38ba9a385a58701a78d8c0aa4f4dc76e0"
+  integrity sha512-B2+99v7NKqMFkHuhC0KssGOckwz2vHH8UfU29JMZZ6U/Ov4PgbFMWg0JQlsTJLwlUfOMFoL3vN5GiAiPluYiKA==
   dependencies:
     "@vuepress/plugin-blog" "^1.2.4"
     "@vuepress/plugin-last-updated" "^1.0.2"
